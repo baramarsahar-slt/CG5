@@ -1,14 +1,15 @@
 :root {
-    --bg-color: #000000;
-    --text-color: #ffffff;
-    --accent-color: #39FF14;
-    --secondary-bg: #4A5D4E;
+    --bg-color: #000000; /* שחור */
+    --text-color: #ffffff; /* לבן */
+    --accent-color: #39FF14; /* ירוק פלורסנט */
+    --secondary-bg: #4A5D4E; /* אפור-ירוק GG5 משוער */
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: Arial, sans-serif;
+    /* שורת הקסם החדשה! פונטים של תכנות */
+    font-family: "Courier New", Courier, monospace;
     direction: rtl;
     margin: 0;
     padding: 0;
@@ -24,6 +25,8 @@ header {
 
 h1, h2, h3 {
     color: var(--accent-color);
+    /* גם הכותרות יהיו בפונט תכנות */
+    font-weight: bold;
 }
 
 a {
@@ -64,10 +67,11 @@ a:hover {
     margin-top: 20px;
 }
 
+/* אלמנטים של קוד כבר קיבלו את הפונט הזה אוטומטית */
 code {
     background-color: #222;
     color: var(--accent-color);
     padding: 2px 5px;
     border-radius: 3px;
-    font-family: monospace;
+    font-weight: bold;
 }
